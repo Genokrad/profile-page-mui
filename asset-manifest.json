@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-homework-template/static/css/main.92b15062.css",
-    "main.js": "/react-homework-template/static/js/main.930aac71.js",
+    "main.js": "/react-homework-template/static/js/main.8d168594.js",
     "static/media/RedHatText-Regular.ttf": "/react-homework-template/static/media/RedHatText-Regular.d93b8c40cc6bc23f697b.ttf",
     "static/media/RedHatText-SemiBold.ttf": "/react-homework-template/static/media/RedHatText-SemiBold.69af0b14f9a50729d460.ttf",
     "static/media/RedHatText-Medium.ttf": "/react-homework-template/static/media/RedHatText-Medium.a038455e5e98c72dcda9.ttf",
@@ -9,10 +9,10 @@
     "static/media/sprite.svg": "/react-homework-template/static/media/sprite.90bb5fb3e52ccab310c2d6bbb335f87a.svg",
     "index.html": "/react-homework-template/index.html",
     "main.92b15062.css.map": "/react-homework-template/static/css/main.92b15062.css.map",
-    "main.930aac71.js.map": "/react-homework-template/static/js/main.930aac71.js.map"
+    "main.8d168594.js.map": "/react-homework-template/static/js/main.8d168594.js.map"
   },
   "entrypoints": [
     "static/css/main.92b15062.css",
-    "static/js/main.930aac71.js"
+    "static/js/main.8d168594.js"
   ]
 }
