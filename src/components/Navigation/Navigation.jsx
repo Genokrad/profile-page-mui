@@ -1,6 +1,6 @@
 import { Divider, Stack, useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import { NavItem } from './Navigation.styled';
+
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 
@@ -24,7 +24,7 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import DirectionsCarFilledIcon from '@mui/icons-material/DirectionsCarFilled';
 import { ProfileNavigation } from './ProfileNavigation/ProfileNavigation';
 import { Text } from './Text/Text';
-import { ComplicatedNavigation } from './ComplicatedNavigation/ComplicatedNavigation';
+
 import { TopNavigationBox } from './TopNavigationBox/TopNavigationBox';
 import { BotNavigationBox } from './BotNavigationBox/BotNavigationBox';
 
