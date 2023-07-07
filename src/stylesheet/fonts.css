@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'RedHatText';
+  src: url('../assets/fonts/RedHatText-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RedHatBold';
+  src: url('../assets/fonts/RedHatText-Bold.ttf');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'RedHatMedium';
+  src: url('../assets/fonts/RedHatText-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RedHatSemiBold';
+  src: url('../assets/fonts/RedHatText-SemiBold.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
