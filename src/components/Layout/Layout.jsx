@@ -44,88 +44,90 @@ export const Layout = () => {
       )}
       {!isMobile && (
         <Stack direction={'row'} sx={{ width: '100%' }}>
-          <Stack
-            direction={'column'}
-            sx={{
-              minWidth: open ? '236px' : '',
-              maxWidth: '80px',
-              position: 'relative',
-            }}
-          >
-            {open && (
-              <IconButton
-                onClick={handleDrawerClose}
-                sx={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: '50%',
-                  width: '24px',
-                  height: '24px',
-                  position: 'absolute',
-                  right: '-12px',
-                  top: '28px',
-                  boxShadow: '1px 1px 7px #546E7A',
-                  '&:hover': {
-                    color: '#FFFFFF',
-                    backgroundColor: '#546E7A',
-                  },
-                }}
-              >
-                <ChevronLeftIcon />
-              </IconButton>
-            )}
-            {!open && (
-              <IconButton
-                onClick={handleDrawerOpen}
-                sx={{
-                  backgroundColor: '#ffffff',
-                  borderRadius: '50%',
-                  width: '24px',
-                  height: '24px',
-                  position: 'absolute',
-                  right: '-12px',
-                  top: '28px',
-                  boxShadow: '1px 1px 7px #546E7A',
-                  '&:hover': {
-                    color: '#FFFFFF',
-                    backgroundColor: '#546E7A',
-                  },
-                }}
-              >
-                <ChevronRightIcon />
-              </IconButton>
-            )}
-            {open && (
-              <Stack
-                sx={{
-                  padding: '16px',
-                  width: '100%',
-                  height: '80px',
-                  backgroundColor: '#173244',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                <img style={{ height: '46px' }} src={logo} alt="hiwayLogo" />
-              </Stack>
-            )}
-            {!open && (
-              <Stack
-                sx={{
-                  padding: '16px',
-                  width: '100%',
-                  height: '80px',
-                  backgroundColor: '#173244',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                }}
-              >
-                <img src={miniLogo} alt="hiwayLogo" />
-              </Stack>
-            )}
-            <NavigationContainer>
-              <Navigation open={open} />
-            </NavigationContainer>
-          </Stack>
+          <header>
+            <Stack
+              direction={'column'}
+              sx={{
+                minWidth: open ? '236px' : '',
+                maxWidth: '80px',
+                position: 'relative',
+              }}
+            >
+              {open && (
+                <IconButton
+                  onClick={handleDrawerClose}
+                  sx={{
+                    backgroundColor: '#ffffff',
+                    borderRadius: '50%',
+                    width: '24px',
+                    height: '24px',
+                    position: 'absolute',
+                    right: '-12px',
+                    top: '28px',
+                    boxShadow: '1px 1px 7px #546E7A',
+                    '&:hover': {
+                      color: '#FFFFFF',
+                      backgroundColor: '#546E7A',
+                    },
+                  }}
+                >
+                  <ChevronLeftIcon />
+                </IconButton>
+              )}
+              {!open && (
+                <IconButton
+                  onClick={handleDrawerOpen}
+                  sx={{
+                    backgroundColor: '#ffffff',
+                    borderRadius: '50%',
+                    width: '24px',
+                    height: '24px',
+                    position: 'absolute',
+                    right: '-12px',
+                    top: '28px',
+                    boxShadow: '1px 1px 7px #546E7A',
+                    '&:hover': {
+                      color: '#FFFFFF',
+                      backgroundColor: '#546E7A',
+                    },
+                  }}
+                >
+                  <ChevronRightIcon />
+                </IconButton>
+              )}
+              {open && (
+                <Stack
+                  sx={{
+                    padding: '16px',
+                    width: '100%',
+                    height: '80px',
+                    backgroundColor: '#173244',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <img style={{ height: '46px' }} src={logo} alt="hiwayLogo" />
+                </Stack>
+              )}
+              {!open && (
+                <Stack
+                  sx={{
+                    padding: '16px',
+                    width: '100%',
+                    height: '80px',
+                    backgroundColor: '#173244',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <img src={miniLogo} alt="hiwayLogo" />
+                </Stack>
+              )}
+              <NavigationContainer>
+                <Navigation open={open} />
+              </NavigationContainer>
+            </Stack>
+          </header>
           <Outlet />
         </Stack>
       )}
