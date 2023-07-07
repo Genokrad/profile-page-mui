@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.92b15062.css",
-    "main.js": "/react-homework-template/static/js/main.8d168594.js",
-    "static/media/RedHatText-Regular.ttf": "/react-homework-template/static/media/RedHatText-Regular.d93b8c40cc6bc23f697b.ttf",
-    "static/media/RedHatText-SemiBold.ttf": "/react-homework-template/static/media/RedHatText-SemiBold.69af0b14f9a50729d460.ttf",
-    "static/media/RedHatText-Medium.ttf": "/react-homework-template/static/media/RedHatText-Medium.a038455e5e98c72dcda9.ttf",
-    "static/media/RedHatText-Bold.ttf": "/react-homework-template/static/media/RedHatText-Bold.fe1927bac3aec656efb8.ttf",
-    "static/media/sprite.svg": "/react-homework-template/static/media/sprite.90bb5fb3e52ccab310c2d6bbb335f87a.svg",
-    "index.html": "/react-homework-template/index.html",
-    "main.92b15062.css.map": "/react-homework-template/static/css/main.92b15062.css.map",
-    "main.8d168594.js.map": "/react-homework-template/static/js/main.8d168594.js.map"
+    "main.css": "/profile-page-mui/static/css/main.e48200be.css",
+    "main.js": "/profile-page-mui/static/js/main.fdbe3268.js",
+    "static/media/RedHatText-Regular.ttf": "/profile-page-mui/static/media/RedHatText-Regular.d93b8c40cc6bc23f697b.ttf",
+    "static/media/RedHatText-SemiBold.ttf": "/profile-page-mui/static/media/RedHatText-SemiBold.69af0b14f9a50729d460.ttf",
+    "static/media/RedHatText-Medium.ttf": "/profile-page-mui/static/media/RedHatText-Medium.a038455e5e98c72dcda9.ttf",
+    "static/media/RedHatText-Bold.ttf": "/profile-page-mui/static/media/RedHatText-Bold.fe1927bac3aec656efb8.ttf",
+    "static/media/sprite.svg": "/profile-page-mui/static/media/sprite.90bb5fb3e52ccab310c2d6bbb335f87a.svg",
+    "index.html": "/profile-page-mui/index.html",
+    "main.e48200be.css.map": "/profile-page-mui/static/css/main.e48200be.css.map",
+    "main.fdbe3268.js.map": "/profile-page-mui/static/js/main.fdbe3268.js.map"
   },
   "entrypoints": [
-    "static/css/main.92b15062.css",
-    "static/js/main.8d168594.js"
+    "static/css/main.e48200be.css",
+    "static/js/main.fdbe3268.js"
   ]
 }
