@@ -26,7 +26,7 @@ export const Profil = () => {
     email: '',
     tel: '',
     status: 'Actif',
-    skils: [],
+    skils: [{ id: 0, profession: 'Développeur', ability: [] }],
   });
 
   const [alert, setAlert] = useState({

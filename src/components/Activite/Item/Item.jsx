@@ -24,39 +24,25 @@ export const Item = ({ color, data, isMobile }) => {
       justifyContent={'space-between'}
       sx={{ padding: '16px 24px' }}
     >
-      {data ? (
-        <>
-          <Box sx={itemStyle} component="p">
-            {data.profession}
-          </Box>
-          <Stack
-            sx={{ width: !isMobile ? '50%' : '100%' }}
-            direction={'row'}
-            justifyContent={'flex-start'}
-            flexWrap={'wrap'}
-            gap={'6px'}
-          >
-            {data?.ability?.map(item => (
-              <Box key={nanoid()} sx={pStyle} component="p">
-                {`${item}, `}
-              </Box>
-            ))}
-          </Stack>
-        </>
-      ) : (
-        <>
-          {isMobile && (
-            <Box sx={itemStyle} component="p">
-              Metier
+      {console.log(data)}
+      <>
+        <Box sx={itemStyle} component="p">
+          {data.profession}
+        </Box>
+        <Stack
+          sx={{ width: !isMobile ? '50%' : '100%' }}
+          direction={'row'}
+          justifyContent={'flex-start'}
+          flexWrap={'wrap'}
+          gap={'6px'}
+        >
+          {data?.ability?.map(item => (
+            <Box key={nanoid()} sx={pStyle} component="p">
+              {`${item}, `}
             </Box>
-          )}
-          {isMobile && (
-            <Box sx={itemStyle} component="p">
-              Spécialités
-            </Box>
-          )}
-        </>
-      )}
+          ))}
+        </Stack>
+      </>
     </Stack>
   );
 };
