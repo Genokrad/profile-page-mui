@@ -2,14 +2,6 @@ import { useTheme } from '@mui/material/styles';
 const { Stack, Box } = require('@mui/material');
 
 export const styles = {
-  // textPlug: {
-  //   fontFamily: 'RedHatText',
-  //   fontSize: '16px',
-  //   lineHeight: 1.5,
-  //   width: '50%',
-  //   letterSpacing: 0.15,
-  //   color: '#0B2333',
-  // },
   textData: {
     fontFamily: 'RedHatText',
     fontSize: '16px',
@@ -31,7 +23,6 @@ export const itemStyle = {
 
 export const Item = ({ data, text, textPlug }) => {
   const theme = useTheme();
-  // const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Stack

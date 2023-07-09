@@ -9,14 +9,11 @@ export const Skils = ({ data, isMobile }) => {
       direction="column"
       divider={isMobile ? null : <Divider orientation="horizontal" />}
     >
-      {/* {console.log('data', data)} */}
-      {/* <Item color="rgba(0, 0, 0, 0.38)" /> */}
       {data.skils.map((item, index) => (
         <React.Fragment key={nanoid()}>
           <Item color="#060506" data={item} isMobile={isMobile} />
           {isMobile && index === 0 && <Divider orientation="horizontal" />}
         </React.Fragment>
-        // <Item key={nanoid()} color="#060506" data={item} isMobile={isMobile} />
       ))}
     </Stack>
   );

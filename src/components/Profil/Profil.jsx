@@ -123,21 +123,3 @@ export const Profil = () => {
     </Stack>
   );
 };
-
-// position: 'absolute', bottom: 0, right: 0
-
-// const [customer, setCustomer] = useState({
-//   id: 'c1739ca9-9676-43e6-b08e-14e44e66a7f2',
-//   lastName: 'Jean-David',
-//   name: 'Viala',
-//   email: 'jean-david.viala@gmail.com',
-//   tel: '+33 892 68 06 71',
-//   status: 'Actif',
-//   skils: [
-//     {
-//       id: 0,
-//       profession: 'Développeur',
-//       ability: [],
-//     },
-//   ],
-// });

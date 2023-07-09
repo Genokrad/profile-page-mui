@@ -1,11 +1,10 @@
 import { useState } from 'react';
 
 import { nanoid } from 'nanoid';
-import { cloneDeep } from 'lodash'; // Импортируем функцию cloneDeep
+import { cloneDeep } from 'lodash';
 
 import { Button, Divider, Stack } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-// import DeleteIcon from '@mui/icons-material/Delete';
 
 import { TwoButtons } from 'components/Buttons/TwoButtons/TwoButtons';
 import { Dropdown } from '../Dropdown/Dropdown';
@@ -24,8 +23,6 @@ const styleChenger = (isMobile, mark) => {
       paddingTop: '24px',
 
       paddingRight: '24px',
-      // justifyContent: !isMobile ? 'flex-end' : 'space-between',
-      // paddingLeft: !isMobile ? '0' : '24px',
     }),
   }[mark];
 };
@@ -36,9 +33,8 @@ export const SkilsActive = ({
   alertOpen,
   isMobile,
 }) => {
-  const [updatedSkils, setUpdatedSkils] = useState(cloneDeep(customer?.skils)); // create deep copy of arr when initialise
+  const [updatedSkils, setUpdatedSkils] = useState(cloneDeep(customer?.skils));
 
-  // function assigner
   const stateAssigner = (data, index, item, mark) => {
     setUpdatedSkils(prevSkils =>
       skillUpdater({ itemIndex: index, data, item, prevSkils, mark })
@@ -56,9 +52,7 @@ export const SkilsActive = ({
   };
 
   const skillUpdater = ({ itemIndex, data, item, prevSkils, mark }) => {
-    const updatedSkilsCopy = cloneDeep(prevSkils); // create deep copy of arr
-
-    // console.log({ itemIndex, data, item, prevSkils, mark });
+    const updatedSkilsCopy = cloneDeep(prevSkils);
 
     return {
       deleteSkils: () => {
@@ -112,59 +106,6 @@ export const SkilsActive = ({
         return updatedSkilsCopy;
       },
     }[mark]();
-
-    // switch (mark) {
-    //   case 'deleteSkils':
-    //     updatedSkilsCopy.map((skill, index) => {
-    //       if (skill.profession === item.profession && index === itemIndex) {
-    //         skill.ability = skill.ability.filter(i => i !== data);
-    //         return skill;
-    //       }
-    //       return skill;
-    //     });
-    //     return updatedSkilsCopy;
-    //   case 'addSkils':
-    //     updatedSkilsCopy.map((skill, index) => {
-    //       if (skill.profession === item.profession && index === itemIndex) {
-    //         skill.ability.push(data);
-    //       }
-    //       return updatedSkilsCopy;
-    //     });
-    //     break;
-    //   case 'newProfession':
-    //     updatedSkilsCopy.map((skill, index) => {
-    //       if (skill.profession === item.profession && index === itemIndex) {
-    //         console.log(updatedSkils[index].profession);
-
-    //         //If the form should remember everything except the boss, comment out this code / Если форма должна запоминать все кроме шеф, закоментировать данный код
-    //         // if (prevSkils[index].profession === 'Chef De Projet') {
-    //         //   console.log('Chef De Projet');
-    //         //   skill.ability = [];
-    //         // }
-    //         //
-    //         skill.profession = data;
-    //       }
-    //       return updatedSkilsCopy;
-    //     });
-    //     break;
-    //   case 'deleteProfession':
-    //     if (updatedSkilsCopy.length > 1) {
-    //       updatedSkilsCopy.splice(itemIndex, 1);
-    //     }
-    //     break;
-    //   case 'addItem':
-    //     console.log(mark);
-    //     updatedSkilsCopy.push({
-    //       id: updatedSkilsCopy.length,
-    //       profession: '',
-    //       ability: [],
-    //     });
-
-    //     break;
-    //   default:
-    //     break;
-    // }
-    // return updatedSkilsCopy;
   };
 
   const updateUser = e => {
@@ -217,13 +158,11 @@ export const SkilsActive = ({
       message: 'Votre profil a été mis à jour',
       error: false,
     });
-    // console.log('customer', customer);
   };
 
   return (
     <form onSubmit={updateUser}>
       <Stack
-        // justifyContent={'space-between'}
         direction="column"
         divider={<Divider orientation="horizontal" flexItem />}
       >
@@ -277,16 +216,6 @@ export const SkilsActive = ({
                   updatedSkils={updatedSkils}
                 />
               )}
-              {/* <IconButton
-                onClick={() => deleteProfession('deleteProfession', index)}
-                sx={{
-                  padding: '16px',
-                  color: '#D54942',
-                }}
-                disabled={updatedSkils.length < 2 ? true : false}
-              >
-                <DeleteIcon fontSize="large" />
-              </IconButton> */}
             </Stack>
           ))}
 
@@ -305,7 +234,7 @@ export const SkilsActive = ({
               width: '200px',
               borderRadius: '6px',
               '&:hover': {
-                backgroundColor: 'rgba(25, 118, 210, 0.04);', // Replace with the desired background color
+                backgroundColor: 'rgba(25, 118, 210, 0.04);',
               },
             }}
           >

@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 
 import { Layout } from './Layout/Layout';
+
 import { ProfilePage } from '../Pages/ProfilePage/ProfilePage';
 import { BanquePage } from 'Pages/BanquePage/BanquePage';
 import { DashboardPage } from 'Pages/DashboardPage/DashboardPage';
@@ -11,9 +12,7 @@ import { DocumentsPage } from 'Pages/DocumentsPage/DocumentsPage';
 import { ClusterPage } from 'Pages/ClusterPage/ClusterPage';
 import { FormationPage } from 'Pages/FormationPage/FormationPage';
 import { PatrimonialPage } from 'Pages/PatrimonialPage/PatrimonialPage';
-
 import { SettingsPage } from 'Pages/SettingsPage/SettingsPage';
-import { Stack } from '@mui/material';
 import { ErrorPage } from 'Pages/ErrorPage/ErrorPage';
 
 export const App = () => {

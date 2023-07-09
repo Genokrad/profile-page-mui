@@ -1,9 +1,6 @@
 import { useTheme } from '@mui/material/styles';
 import { Box, IconButton, Stack } from '@mui/material';
 
-// import Input from '@mui/material/Input';
-// import { useEffect, useState } from 'react';
-
 export const ItemWithIcone = ({ text, data, textPlug, Icone }) => {
   const theme = useTheme();
 

@@ -2,18 +2,9 @@ import { Chip, Paper, Stack, Typography } from '@mui/material';
 import { nanoid } from 'nanoid';
 import { useEffect, useState } from 'react';
 
-// const CustomDiv = styled("div")(({theme}) => {
-//   background: theme.palette.common.white
-// })
-
 export const Chips = ({ item, index, actionDelFun, color }) => {
   const [chipsItem, setChipsItem] = useState(item);
   const [border, setBorder] = useState(true);
-
-  // const theme = useTheme();
-
-  // console.log(theme.palette.common.white)
-  // console.log(theme.spacing(3))
 
   useEffect(() => {
     if (item !== chipsItem) {
@@ -40,7 +31,6 @@ export const Chips = ({ item, index, actionDelFun, color }) => {
     <Stack>
       <Paper
         sx={{
-          // width: '100%',
           display: 'flex',
           justifyContent: 'flex-start',
           flexWrap: 'wrap',

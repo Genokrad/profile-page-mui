@@ -27,12 +27,9 @@ const skilsVariant = [
 
 export const ChipsToChose = ({ item, index, handleAdd }) => {
   let variantFromItem = item.ability;
-  // const [variantFromItem, setVariantFromItem] = useState(item.ability);
   const [finalArr, setFinalArr] = useState(
     skilsVariant.filter(item => !variantFromItem.includes(item))
   );
-
-  // if ()
 
   const someFu = data => {
     let updatedItem = [...finalArr];
@@ -40,25 +37,6 @@ export const ChipsToChose = ({ item, index, handleAdd }) => {
     setFinalArr(updatedItem);
     handleAdd(data, index, item, 'addSkils');
   };
-
-  // console.log(
-  //   // { chipsVariants: chipsVariants },
-  //   { variantFromItem: variantFromItem },
-  //   { finalArr: finalArr }
-  // );
-
-  // const filterFunction = () => {
-  //   const arr = [];
-  //   arr.push();
-  //   setFinalArr(arr);
-  // };
-
-  // const handleChipDelete = data => {
-  //   const updatedItem = { ...chipsItem };
-  //   updatedItem.ability = updatedItem.ability.filter(i => i !== data);
-  //   setChipsItem(updatedItem);
-  //   actionDelFun(data, index, updatedItem);
-  // };
 
   return (
     <Paper
@@ -89,8 +67,6 @@ export const ChipsToChose = ({ item, index, handleAdd }) => {
                   size="small"
                   clickable={true}
                   onClick={() => someFu(data)}
-                  // onDelete={() => handleChipDelete(data)}
-
                   variant="outlined"
                 />
               </li>

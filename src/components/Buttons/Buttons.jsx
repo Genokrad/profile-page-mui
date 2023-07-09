@@ -7,14 +7,14 @@ export const Buttons = ({ text, fu, color, icone, textColor }) => {
       onClick={fu}
       variant="contained"
       sx={{
-        borderRadius: '6px', // Adjust the border radius value as needed
+        borderRadius: '6px',
         '& .MuiButton-startIcon': {
-          marginRight: '10px', // Adjust the margin as needed
+          marginRight: '10px',
         },
         backgroundColor: color,
         color: textColor,
       }}
-      startIcon={icone ? <CreateIcon /> : null} //why i cant use here icon from props ?
+      startIcon={icone ? <CreateIcon /> : null}
     >
       {text}
     </Button>

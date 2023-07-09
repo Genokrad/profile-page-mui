@@ -4,18 +4,12 @@ import { nanoid } from 'nanoid';
 import { NavItem } from '../Navigation.styled';
 import React from 'react';
 
-// : { icene: Icone, href, text }
-
 export const TopNavigationBox = ({
   open,
   ComplicatedListExpander,
   loadSubPage,
   items,
 }) => {
-  // console.log(item);
-
-  // const { icone: Icone, href, text } = item;
-
   return items.map(({ icone: Icone, href, text, subPages }) => {
     return (
       <React.Fragment key={nanoid()}>
@@ -53,32 +47,4 @@ export const TopNavigationBox = ({
       </React.Fragment>
     );
   });
-
-  // <>
-
-  //{
-  /* {item.subPages && (
-        <Stack sx={{ justifyContent: 'center' }}>
-          <ComplicatedNavigation
-            key={nanoid()}
-            listExpander={ComplicatedListExpander}
-            href={item.href}
-            open={open}
-            loadSubPage={loadSubPage}
-            subPages={item.subPages}
-            icone={item.icone}
-            text={item.text}
-          />
-          {!open && item.loadSubPage[item.href] && (
-            <Divider
-              orientation="horizontal"
-              flexItem
-              sx={{ marginLeft: '21px', width: '32px' }}
-            />
-          )}
-        </Stack>
-      )} */
-  // }
-  // </>
-  // );
 };

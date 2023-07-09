@@ -11,7 +11,7 @@ export const TwoButtons = ({ toggler, styleChenger, isMobile }) => {
       <Button
         onClick={toggler}
         sx={{
-          borderRadius: '12px', // Adjust the border radius value as needed
+          borderRadius: '12px',
           backgroundColor: '#ECEFF1',
           padding: '15px 23px',
           color: '#060506',
@@ -25,7 +25,7 @@ export const TwoButtons = ({ toggler, styleChenger, isMobile }) => {
 
       <Button
         sx={{
-          borderRadius: '12px', // Adjust the border radius value as needed
+          borderRadius: '12px',
           backgroundColor: '#E84C4C',
           padding: '15px 23px',
         }}

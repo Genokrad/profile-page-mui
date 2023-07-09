@@ -5,13 +5,21 @@ import { MyIcon } from 'components/MyIcone/MyIcone';
 // import Button from '@mui/material/Button';
 
 export const Contrat = ({ isMobile }) => {
+  const dateNow = () => {
+    const currentDate = new Date();
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+    const year = currentDate.getFullYear();
+
+    return `${day}/${month}/${year}`;
+  };
+
   return (
     <Stack
       sx={{
         borderRadius: '16px',
         backgroundColor: '#ffffff',
         padding: '19px 0 20px 0',
-        // padding: '19px 24px 20px 24px',
       }}
       divider={<Divider orientation="horizontal" flexItem />}
     >
@@ -106,7 +114,7 @@ export const Contrat = ({ isMobile }) => {
           }}
           component="p"
         >
-          27/06/2022
+          {dateNow()}
         </Box>
       </Stack>
     </Stack>

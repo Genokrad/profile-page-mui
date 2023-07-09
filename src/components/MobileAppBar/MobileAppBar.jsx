@@ -28,10 +28,8 @@ export const MobileAppBar = ({ togler, open }) => {
 
   useEffect(() => {
     if (open) {
-      // Блокируем прокрутку при открытии компонента
       document.body.style.overflow = 'hidden';
     } else {
-      // Восстанавливаем прокрутку при закрытии компонента
       document.body.style.overflow = 'auto';
     }
   }, [open]);
@@ -73,9 +71,6 @@ export const MobileAppBar = ({ togler, open }) => {
                 <img style={{ height: '37px' }} src={logo} alt="hiwayLogo" />
               </LeftBarImgContainer>
               <Stack>
-                {/* <Link href="profile">
-                  <PersonIcon sx={{ fontSize: 32 }} />
-                </Link> */}
                 <IconButton
                   // onClick={() => togler()}
                   size="large"

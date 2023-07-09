@@ -16,8 +16,6 @@ export const Item = ({ color, data, isMobile }) => {
     lineHeight: 1.5,
     letterSpacing: 0.15,
     color: color,
-    // gap: '6px',
-    // paddingLeft: '6px',
   };
 
   return (

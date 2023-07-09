@@ -11,11 +11,6 @@ export const Dropdown = ({ item, changeProfession, index }) => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const handleChange = event => {
-    // if (event.target.value === 'Chef De Projet') {
-    //   setEmptyField(true);
-    // } else {
-    //   setEmptyField(false);
-    // }
     setSelectedOption(event.target.value);
 
     changeProfession(event.target.value, index, item, 'newProfession');
@@ -46,9 +41,3 @@ export const Dropdown = ({ item, changeProfession, index }) => {
     </FormControl>
   );
 };
-
-// {options.map(option => (
-//   <MenuItem key={option.id} value={option.name}>
-//     {option.name}
-//   </MenuItem>
-// ))}

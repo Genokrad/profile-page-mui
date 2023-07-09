@@ -19,13 +19,11 @@ export const ProfileNavigation = ({
       <NavItemProfile
         onClick={listExpander}
         to={href}
-        // key={nanoid()}
         open={open}
         loadmore={loadProfilePage.toString()}
       >
         <Stack
           direction={'row'}
-          // gap={'8px'}
           justifyContent={open ? 'space-between' : 'center'}
           alignItems={'center'}
           width={'100%'}

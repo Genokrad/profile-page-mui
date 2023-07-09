@@ -9,8 +9,6 @@ import { useState } from 'react';
 import { SkilsActive } from './SkilsActive/SkilsActive';
 import { AnchorElTooltips } from 'components/Tooltip/Tooltip';
 
-// import { InformationActivite } from './Activite.styled';
-
 export const sectionWraper = {
   borderRadius: '16px',
   backgroundColor: '#ffffff',
@@ -29,10 +27,7 @@ export const Activite = ({ customer, setCustomer, alertOpen, isMobile }) => {
   };
 
   return (
-    <Stack
-      sx={sectionWraper}
-      // divider={<Divider orientation="horizontal" flexItem />}
-    >
+    <Stack sx={sectionWraper}>
       <Stack
         direction="row"
         alignItems="center"
@@ -90,18 +85,3 @@ export const Activite = ({ customer, setCustomer, alertOpen, isMobile }) => {
     </Stack>
   );
 };
-
-//<Stack sx={{ paddingBottom: '16px' }} spacing={'35px'} direction="column">
-//<h2>Activité</h2>
-//<Box
-//  sx={{
-//  fontFamily: 'RedHatMedium',
-
-//fontSize: '16px',
-//lineHeight: 1.6,
-//}}
-//component="p"
-//>
-//Développeur
-//</Box>
-//</Stack>

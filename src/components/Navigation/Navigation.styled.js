@@ -14,8 +14,7 @@ export const NavItem = styled(NavLink)`
   align-items: center;
   padding: 8px;
   min-height: 48px;
-  /* margin-top: 8px;
-  margin-bottom: 8px; */
+
   color: #90a4ae;
 
   ${({ open }) =>
@@ -51,8 +50,6 @@ export const NavItemProfile = styled(NavLink)`
   }
 
   &.active {
-    /* border-radius: ${({ loadsubpage }) =>
-      loadsubpage ? '16px 16px 0 0' : '16px'}; */
     background-color: rgba(25, 118, 210, 0.08);
     color: #3779be;
     fill: red;
@@ -81,8 +78,6 @@ export const NavItemHard = styled(NavLink)`
   }
 
   &.active {
-    /* border-radius: ${({ loadsubpage }) =>
-      loadsubpage ? '16px 16px 0 0' : '16px'}; */
     background-color: rgba(25, 118, 210, 0.08);
     color: #3779be;
 
@@ -106,8 +101,7 @@ export const ComplicatedNav = styled(NavLink)`
   font-family: 'RedHatMedium';
   font-size: 11px;
   padding: 8px 16px;
-  /* margin-top: 8px;  */
-  /* margin-bottom: 8px; */
+
   color: #546e7a;
 
   ${({ open }) =>
@@ -119,7 +113,6 @@ export const ComplicatedNav = styled(NavLink)`
 
   &:hover {
     color: #3779be;
-    /* background-color: rgba(25, 118, 210, 0.05); */
   }
   &.active {
     background-color: #1976d20a;
@@ -136,9 +129,7 @@ export const NestedNavItem = styled(NavLink)`
   align-items: center;
   font-family: RedHatMedium;
   font-size: 11px;
-  /* padding: 8px 8px 8px 8px;
-  margin-top: 8px; */
-  /* margin-bottom: 8px; */
+
   color: #90a4ae;
 
   ${({ open }) =>
@@ -150,26 +141,8 @@ export const NestedNavItem = styled(NavLink)`
 
   &:hover {
     color: #3779be;
-    /* background-color: rgba(25, 118, 210, 0.05); */
   }
   &.active {
     color: #3779be;
   }
 `;
-
-// export const NavItem = styled(NavLink)`
-//   /* border-radius: 16px;
-//   gap: 16px;
-//   display: flex;
-//   align-items: center;
-//   padding: 8px 8px 8px 8px;
-//   margin-top: 8px;
-//   margin-bottom: 8px; */
-//   color: #3779be;
-//   /* &:hover {
-//     background-color: rgba(25, 118, 210, 0.05);
-//   } */
-//   &.active {
-//     background-color: rgba(25, 118, 210, 0.08);
-//   }
-// `;

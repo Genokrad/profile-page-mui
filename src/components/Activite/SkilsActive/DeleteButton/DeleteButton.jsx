@@ -19,5 +19,4 @@ export const DeleteButton = ({
       <DeleteIcon />
     </IconButton>
   );
-  // fontSize={!isMobile ? 'large' : ''}
 };

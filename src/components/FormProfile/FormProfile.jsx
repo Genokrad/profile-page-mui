@@ -15,8 +15,6 @@ const styleChenger = (isMobile, mark) => {
       paddingTop: '24px',
 
       paddingRight: '24px',
-      // justifyContent: !isMobile ? 'flex-end' : 'space-between',
-      // paddingLeft: !isMobile ? '0' : '24px',
     }),
   }[mark];
 };
@@ -80,11 +78,6 @@ export const FormProfile = ({
     };
     formik.setValues(initialValuesRef.current); // Update the formik values with new initial values
   }, [customer]); // eslint-disable-line
-
-  // const formReset = () => {
-  //   customerCleaner();
-  //   formik.resetForm({ values: initialValuesRef.current });
-  // };
 
   const changeCustomerData = values => {
     setCustomer(prevCustomer => ({

@@ -19,13 +19,11 @@ export const ComplicatedNavigation = ({
       <NavItemHard
         onClick={() => listExpander(href)}
         to={href}
-        // key={nanoid()}
         open={open}
         loadmore={loadSubPage.toString()}
       >
         <Stack
           direction={'row'}
-          // gap={'8px'}
           justifyContent={open ? 'space-between' : 'center'}
           alignItems={'center'}
           width={'100%'}
@@ -38,13 +36,7 @@ export const ComplicatedNavigation = ({
           >
             <Icone sx={{}} />
             {open && (
-              <Typography
-                variant="p"
-                key={nanoid()}
-                // color={'#546E7A'}
-                // fontSize={'14px'}
-                // fontFamily={'RedHatSemiBold'}
-              >
+              <Typography variant="p" key={nanoid()}>
                 {text}
               </Typography>
             )}
@@ -68,7 +60,6 @@ export const ComplicatedNavigation = ({
             width: '100%',
 
             borderRadius: '0 0 16px 16px',
-            // gap: '8px',
           }}
         >
           {subPages.map(({ text, subHref, icone: Icone }) => {

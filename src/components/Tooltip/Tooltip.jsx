@@ -1,8 +1,7 @@
 import Tooltip from '@mui/material/Tooltip';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import ErrorIcon from '@mui/icons-material/Error';
 import { Stack } from '@mui/material';
-// import { IconButton } from '@mui/material';
 
 export function AnchorElTooltips() {
   const positionRef = useRef({
@@ -11,10 +10,6 @@ export function AnchorElTooltips() {
   });
   const popperRef = useRef(null);
   const areaRef = useRef(null);
-
-  useEffect(() => {
-    // console.log('popperRef', areaRef);
-  }, [popperRef]);
 
   const handleMouseMove = event => {
     positionRef.current = { x: event.clientX, y: event.clientY };
@@ -44,18 +39,6 @@ export function AnchorElTooltips() {
         },
       }}
     >
-      {/* <IconButton
-        ref={areaRef}
-        onMouseMove={handleMouseMove}
-        sx={{
-          width: '20px',
-          height: '20px',
-          // borderRadius: '50%',
-          // bgcolor: 'primary',
-          // color: 'primary.contrastText',
-          // p: 2,
-        }}
-      > */}
       <Stack
         sx={{
           borderRadius: '50%',
@@ -79,10 +62,6 @@ export function AnchorElTooltips() {
           }}
         />
       </Stack>
-
-      {/* </IconButton> */}
-      {/* ! */}
-      {/* </Box> */}
     </Tooltip>
   );
 }
