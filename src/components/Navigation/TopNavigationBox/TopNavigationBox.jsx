@@ -2,6 +2,7 @@ import { Divider, Stack } from '@mui/material';
 import { ComplicatedNavigation } from '../ComplicatedNavigation/ComplicatedNavigation';
 import { nanoid } from 'nanoid';
 import { NavItem } from '../Navigation.styled';
+import React from 'react';
 
 // : { icene: Icone, href, text }
 
@@ -17,7 +18,7 @@ export const TopNavigationBox = ({
 
   return items.map(({ icone: Icone, href, text, subPages }) => {
     return (
-      <>
+      <React.Fragment key={nanoid()}>
         {subPages ? (
           <Stack sx={{ justifyContent: 'center' }}>
             <ComplicatedNavigation
@@ -32,6 +33,7 @@ export const TopNavigationBox = ({
             />
             {!open && loadSubPage[href] && (
               <Divider
+                key={nanoid()}
                 orientation="horizontal"
                 flexItem
                 sx={{ marginLeft: '21px', width: '32px' }}
@@ -48,7 +50,7 @@ export const TopNavigationBox = ({
             )}
           </NavItem>
         )}
-      </>
+      </React.Fragment>
     );
   });
 

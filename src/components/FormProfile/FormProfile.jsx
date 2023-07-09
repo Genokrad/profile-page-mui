@@ -24,11 +24,11 @@ const styleChenger = (isMobile, mark) => {
 const validationSchema = yup.object().shape({
   lastName: yup
     .string()
-    .matches(/^[a-zA-Z'-]+$/, 'Format de prénom invalide')
+    .matches(/^[a-zA-Zа-яА-Я'-]+$/, 'Format de prénom invalide')
     .required('Champ obligatoire'),
   name: yup
     .string()
-    .matches(/^[a-zA-Z'-]+$/, 'Format de nom invalide')
+    .matches(/^[a-zA-Zа-яА-Я'-]+$/, 'Format de nom invalide')
     .required('Champ obligatoire'),
   email: yup
     .string()

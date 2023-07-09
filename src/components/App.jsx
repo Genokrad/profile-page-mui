@@ -13,6 +13,8 @@ import { FormationPage } from 'Pages/FormationPage/FormationPage';
 import { PatrimonialPage } from 'Pages/PatrimonialPage/PatrimonialPage';
 
 import { SettingsPage } from 'Pages/SettingsPage/SettingsPage';
+import { Stack } from '@mui/material';
+import { ErrorPage } from 'Pages/ErrorPage/ErrorPage';
 
 export const App = () => {
   return (
@@ -41,6 +43,7 @@ export const App = () => {
           <Route path="formation" element={<FormationPage />} />
           <Route path="patrimonial" element={<PatrimonialPage />} />
         </Route>
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );
