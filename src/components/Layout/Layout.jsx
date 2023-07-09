@@ -7,7 +7,7 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { Outlet } from 'react-router-dom';
 import { IconButton, Stack, useMediaQuery } from '@mui/material';
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { MobileAppBar } from 'components/MobileAppBar/MobileAppBar';
 
 export const Layout = () => {
@@ -128,7 +128,11 @@ export const Layout = () => {
               </NavigationContainer>
             </Stack>
           </header>
-          <Outlet />
+          <main style={{ width: '100%' }}>
+            <Suspense fallback={<div>Loading</div>}>
+              <Outlet />
+            </Suspense>
+          </main>
         </Stack>
       )}
     </>

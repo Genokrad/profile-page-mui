@@ -36,11 +36,11 @@ const validationSchema = yup.object().shape({
     .required('Champ obligatoire'),
   phoneNumber: yup
     .string()
-    .matches(/^[+]?[0-9\s]{0,15}$/, 'Format de nombre invalide')
+    .matches(/^[+]?[0-9\s]{0,20}$/, 'Format de nombre invalide')
     .required('Champ obligatoire'),
 });
 
-export const FormExample = ({
+export const FormProfile = ({
   customer,
   setCustomer,
   toggler,

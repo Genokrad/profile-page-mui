@@ -5,7 +5,7 @@ import { Buttons } from 'components/Buttons/Buttons';
 import { buttonWraper } from './styles';
 import { useState } from 'react';
 import { PersonalData } from 'components/PersonalData/PersonalData';
-import { FormExample } from 'components/FormExample/FormExample';
+import { FormProfile } from 'components/FormProfile/FormProfile';
 
 const styleChenger = (isActive, mark) => {
   return {
@@ -35,7 +35,7 @@ export const DonnesPersonnelles = ({
 
       {!isActive && <PersonalData data={customer} isMobile={isMobile} />}
       {isActive && (
-        <FormExample
+        <FormProfile
           customer={customer}
           setCustomer={setCustomer}
           toggler={toggler}

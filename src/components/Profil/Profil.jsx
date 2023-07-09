@@ -21,33 +21,12 @@ const styles = {
 export const Profil = () => {
   const [customer, setCustomer] = useState({
     id: 'c1739ca9-9676-43e6-b08e-14e44e66a7f2',
-    lastName: 'Jean-David',
-    name: 'Viala',
-    email: 'jean-david.viala@gmail.com',
-    tel: '+33 892 68 06 71',
+    lastName: '',
+    name: '',
+    email: '',
+    tel: '',
     status: 'Actif',
-    skils: [
-      {
-        id: 0,
-        profession: 'Développeur',
-        ability: [
-          'JS',
-          'HTML/CSS',
-          'PHP',
-          'Java',
-          'React',
-          'SQL',
-          'React Native',
-          'Vue',
-          'Angular',
-        ],
-      },
-      {
-        id: 1,
-        profession: 'Lead Développeur',
-        ability: ['JS', 'HTML/CSS', 'PHP', 'Java', 'React'],
-      },
-    ],
+    skils: [],
   });
 
   const [alert, setAlert] = useState({

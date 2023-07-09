@@ -15,9 +15,17 @@ import { Navigation } from 'components/Navigation/Navigation';
 import PersonIcon from '@mui/icons-material/Person';
 import { Outlet } from 'react-router-dom';
 import { Stack } from '@mui/material';
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
+
+import { useNavigate } from 'react-router';
 
 export const MobileAppBar = ({ togler, open }) => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/profile');
+  };
+
   useEffect(() => {
     if (open) {
       // Блокируем прокрутку при открытии компонента
@@ -65,6 +73,9 @@ export const MobileAppBar = ({ togler, open }) => {
                 <img style={{ height: '37px' }} src={logo} alt="hiwayLogo" />
               </LeftBarImgContainer>
               <Stack>
+                {/* <Link href="profile">
+                  <PersonIcon sx={{ fontSize: 32 }} />
+                </Link> */}
                 <IconButton
                   // onClick={() => togler()}
                   size="large"
@@ -72,6 +83,7 @@ export const MobileAppBar = ({ togler, open }) => {
                   color="inherit"
                   aria-label="menu"
                   sx={{ padding: 0 }}
+                  onClick={handleButtonClick}
                 >
                   <PersonIcon sx={{ fontSize: 32 }} />
                 </IconButton>
@@ -136,7 +148,11 @@ export const MobileAppBar = ({ togler, open }) => {
           </AppBar>
         </Box>
       </header>
-      <Outlet />
+      <main style={{ width: '100%' }}>
+        <Suspense fallback={<div>Loading</div>}>
+          <Outlet />
+        </Suspense>
+      </main>
     </>
   );
 };
