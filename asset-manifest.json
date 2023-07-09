@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profile-page-mui/static/css/main.e48200be.css",
-    "main.js": "/profile-page-mui/static/js/main.2e137833.js",
+    "main.js": "/profile-page-mui/static/js/main.a8d90232.js",
     "static/media/RedHatText-Regular.ttf": "/profile-page-mui/static/media/RedHatText-Regular.d93b8c40cc6bc23f697b.ttf",
     "static/media/RedHatText-SemiBold.ttf": "/profile-page-mui/static/media/RedHatText-SemiBold.69af0b14f9a50729d460.ttf",
     "static/media/RedHatText-Medium.ttf": "/profile-page-mui/static/media/RedHatText-Medium.a038455e5e98c72dcda9.ttf",
@@ -9,10 +9,10 @@
     "static/media/sprite.svg": "/profile-page-mui/static/media/sprite.90bb5fb3e52ccab310c2d6bbb335f87a.svg",
     "index.html": "/profile-page-mui/index.html",
     "main.e48200be.css.map": "/profile-page-mui/static/css/main.e48200be.css.map",
-    "main.2e137833.js.map": "/profile-page-mui/static/js/main.2e137833.js.map"
+    "main.a8d90232.js.map": "/profile-page-mui/static/js/main.a8d90232.js.map"
   },
   "entrypoints": [
     "static/css/main.e48200be.css",
-    "static/js/main.2e137833.js"
+    "static/js/main.a8d90232.js"
   ]
 }
