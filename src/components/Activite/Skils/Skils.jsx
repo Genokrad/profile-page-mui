@@ -17,18 +17,20 @@ export const Skils = ({ data, isMobile }) => {
       direction="column"
       divider={isMobile ? null : <Divider orientation="horizontal" />}
     >
-      <Stack
-        direction={!isMobile ? 'row' : 'column'}
-        justifyContent={'space-between'}
-        sx={{ padding: '16px 24px' }}
-      >
-        <Box sx={itemStyle} component="p">
-          Metier
-        </Box>
-        <Box sx={itemStyle} component="p">
-          Spécialités
-        </Box>
-      </Stack>
+      {!isMobile && (
+        <Stack
+          direction={!isMobile ? 'row' : 'column'}
+          justifyContent={'space-between'}
+          sx={{ padding: '16px 24px' }}
+        >
+          <Box sx={itemStyle} component="p">
+            Metier
+          </Box>
+          <Box sx={itemStyle} component="p">
+            Spécialités
+          </Box>
+        </Stack>
+      )}
       {data.skils.map((item, index) => (
         <React.Fragment key={nanoid()}>
           <Item color="#060506" data={item} isMobile={isMobile} />
