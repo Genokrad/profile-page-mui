@@ -10,7 +10,7 @@ import {
   LeftBarImgContainer,
   NavigationContainer,
 } from 'components/Layout/Layout.styled';
-import logo from '../../images/hiway-logo.png';
+import logo from '../../images/mini-logo.svg';
 import { Navigation } from 'components/Navigation/Navigation';
 import PersonIcon from '@mui/icons-material/Person';
 import { Outlet } from 'react-router-dom';
@@ -69,6 +69,16 @@ export const MobileAppBar = ({ togler, open }) => {
 
               <LeftBarImgContainer>
                 <img style={{ height: '37px' }} src={logo} alt="hiwayLogo" />
+                <span
+                  style={{
+                    color: 'white',
+                    fontSize: 36,
+                    marginLeft: '3px',
+                  }}
+                >
+                  {' '}
+                  -ASIN
+                </span>
               </LeftBarImgContainer>
               <Stack>
                 <IconButton
@@ -113,12 +123,28 @@ export const MobileAppBar = ({ togler, open }) => {
                       padding: '16px',
                     }}
                   >
-                    <Stack sx={{ height: '37px' }}>
+                    <Stack
+                      sx={{
+                        height: '37px',
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                      }}
+                    >
                       <img
                         style={{ height: '37px' }}
                         src={logo}
                         alt="hiwayLogo"
                       />
+                      <span
+                        style={{
+                          color: 'white',
+                          fontSize: 36,
+                          marginLeft: '3px',
+                        }}
+                      >
+                        {' '}
+                        -ASIN
+                      </span>
                     </Stack>
                     <IconButton
                       onClick={() => togler()}

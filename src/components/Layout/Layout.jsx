@@ -1,8 +1,8 @@
 import { useTheme } from '@mui/material/styles';
 import { Navigation } from 'components/Navigation/Navigation';
 import { NavigationContainer } from './Layout.styled';
-import logo from '../../images/hiway-logo.png';
-import miniLogo from '../../images/mini-logo.png';
+// import logo from '../../images/hiway-logo.png';
+import miniLogo from '../../images/mini-logo.svg';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { Outlet } from 'react-router-dom';
@@ -99,9 +99,24 @@ export const Layout = () => {
                     backgroundColor: '#173244',
                     alignItems: 'center',
                     justifyContent: 'center',
+                    flexDirection: 'row',
                   }}
                 >
-                  <img style={{ height: '46px' }} src={logo} alt="hiwayLogo" />
+                  <img
+                    style={{ height: '46px' }}
+                    src={miniLogo}
+                    alt="hiwayLogo"
+                  />
+                  <span
+                    style={{
+                      color: 'white',
+                      fontSize: 48,
+                      marginLeft: '3px',
+                    }}
+                  >
+                    {' '}
+                    -ASIN
+                  </span>
                 </Stack>
               )}
               {!open && (
