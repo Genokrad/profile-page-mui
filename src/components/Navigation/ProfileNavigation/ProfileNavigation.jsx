@@ -44,7 +44,7 @@ export const ProfileNavigation = ({
                   fontSize={'14px'}
                   fontFamily={'RedHatSemiBold'}
                 >
-                  Jean-David Viala
+                  Your name
                 </Typography>
                 {!isMobile && (
                   <Typography
@@ -54,7 +54,7 @@ export const ProfileNavigation = ({
                     fontSize={'12px'}
                     fontFamily={'RedHatSemiBold'}
                   >
-                    The Digital Factory
+                    Your company
                   </Typography>
                 )}
               </Stack>

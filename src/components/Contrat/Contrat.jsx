@@ -53,7 +53,7 @@ export const Contrat = ({ isMobile }) => {
             color={isMobile ? 'rgba(0, 0, 0, 0.38)' : ''}
             component="p"
           >
-            Contrat Hiway
+            Contrat
           </Box>
           <Stack
             sx={{
@@ -73,7 +73,7 @@ export const Contrat = ({ isMobile }) => {
               }}
               component="p"
             >
-              Contrat Hiway
+              Contrat
             </Box>
             <IconButton
               sx={{
